@@ -6,6 +6,8 @@
 .container__small-card-content{
   display: flex;
   flex-direction: row;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .small-card__photo > img{

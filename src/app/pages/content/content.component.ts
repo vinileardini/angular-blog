@@ -28,7 +28,7 @@ export class ContentComponent implements OnInit {
     const result = dataFake.filter(article => article.id == id)[0]
 
     this.contentTitle = result.title;
-    this.contentDescription = result.description;
+    this.contentDescription = result.descriptionPage;
     this.photoCover = result.photoCover;
   }
 

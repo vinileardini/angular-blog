@@ -1,0 +1,37 @@
+.container__footer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  height: 50px;
+}
+
+.container__footer .container__footer-author{
+  width: 50%;
+  max-width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.container__footer .container__footer-links{
+  width: 50vw;
+  max-width: 50vw;
+  display: flex;
+  justify-content: center;
+
+}
+
+.container__footer-links{
+  display: flex;
+  flex-direction: row;
+}
+
+.container__footer-links-img > a > img{
+  width: 30px;
+  max-width: 30px;
+  height: 30px;
+  max-height: 30px;
+  margin-right: 10px;
+}
+

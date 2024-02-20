@@ -1,6 +1,10 @@
 .container__small-card{
-  width: 700px;
   margin-bottom: 15px;
+
+  @media(min-width: 1000px) {
+    width: 700px;
+  }
+
 }
 
 .container__small-card-content{
@@ -11,9 +15,14 @@
 }
 
 .small-card__photo > img{
-  width: 200px;
+  width: 150px;
   min-width: 200px;
   margin-right: 20px;
+  height: 100px;
+}
+
+.small-card__title > h1{
+  font-size: 16px;
 }
 
 .small-card__title > p{

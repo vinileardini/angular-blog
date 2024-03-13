@@ -1,3 +1,4 @@
+import { Element } from '@angular/compiler';
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { dataFake } from 'src/app/data/dataFake';
@@ -12,7 +13,10 @@ export class ContentComponent implements OnInit {
   photoCover:string = ''
   contentTitle:string = ''
   contentDescription:string = ''
+  tags:string[] = [];
   private id:string | null = "0";
+  numTags:number = 0
+
 
   constructor(
     private route:ActivatedRoute
@@ -22,6 +26,8 @@ export class ContentComponent implements OnInit {
     this.route.paramMap.subscribe(value => this.id = value.get("id"))
 
     this.setValuestoComponent(this.id)
+
+    this.insertTags()
   }
 
   setValuestoComponent(id:string | null){
@@ -30,7 +36,24 @@ export class ContentComponent implements OnInit {
     this.contentTitle = result.title;
     this.contentDescription = result.descriptionPage;
     this.photoCover = result.photoCover;
+    this.tags = result.tags
+
   }
+
+  insertTags(){
+
+    if (this.tags.length != 0){
+      const divPai = document.getElementById("tags")
+      this.tags.forEach(item =>{
+        let newParagraph = document.createElement("p")
+        newParagraph.textContent = item
+        newParagraph.className = "tags__style"
+        divPai?.appendChild(newParagraph)
+      })
+    }
+
+  }
+
 
 
 }

@@ -10,7 +10,6 @@
   align-items: center;
 }
 
-
 .content__cover > img{
   border: 5px solid rgb(126, 126, 126);
   border-radius: 5px;
@@ -19,11 +18,42 @@
   min-width: 500px;
 }
 
+.content_text{
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+
+}
+
 .content__description{
   margin-top: 15px;
+  max-width: 80vw;
+  margin-left: 20px;
 }
 
 .content__description > p{
   margin-top: 20px;
   color: grey;
+}
+
+.content__tags{
+  margin-top: 35px;
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  margin-left: 20px;
+}
+
+.tags__style{
+  background-color: rgb(5, 5, 94);
+  color: rgb(167, 167, 167);
+  border-radius: 5px;
+  min-width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: -mox -fit-content;
+  margin-left: 15px;
+
 }

@@ -47,7 +47,7 @@ export class ContentComponent implements OnInit {
       this.tags.forEach(item =>{
         let newParagraph = document.createElement("p")
         newParagraph.textContent = item
-        newParagraph.className = "tags__style"
+        newParagraph.className = 'tags__style'
         divPai?.appendChild(newParagraph)
       })
     }

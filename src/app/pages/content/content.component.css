@@ -61,3 +61,8 @@
 .teste{
   background-color: green;
 }
+
+.botao-voltar{
+  height: 2px;
+  width: 5px;
+}

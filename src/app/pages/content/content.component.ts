@@ -15,7 +15,8 @@ export class ContentComponent implements OnInit {
   contentDescription:string = ''
   tags:string[] = [];
   private id:string | null = "0";
-  numTags:number = 0
+  numTags:number = 0;
+  botaoVoltar = "";
 
 
   constructor(
@@ -37,6 +38,7 @@ export class ContentComponent implements OnInit {
     this.contentDescription = result.descriptionPage;
     this.photoCover = result.photoCover;
     this.tags = result.tags
+    this.botaoVoltar = "src/assets/img/seta.png"
 
   }
 
